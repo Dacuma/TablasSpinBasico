@@ -1,0 +1,6 @@
+<div leyenda-wrapper>
+  <div *ngFor="let descripcion of descripciones" dcm-leyenda>
+    <div>
+      <div [ngStyle]="{'background-color':descripcion.color}" dcm-colorin></div>{{descripcion.descripcion}}</div>
+  </div>
+</div>

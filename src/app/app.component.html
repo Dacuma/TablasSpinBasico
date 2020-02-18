@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div dcm-main>
+  <div dcm-mainwrapper>
+    <dcm-botonera-principal (botonpulsado)="botonPrincipal($event)"></dcm-botonera-principal>
+    <dcm-botonera-secundaria [iBotonActivo]="botonActivo" (botonpulsado)="botonSecundario($event)"></dcm-botonera-secundaria>
+    <dcm-rangos [parametrosRango]="parametrosRango"></dcm-rangos>
+    <dcm-leyenda></dcm-leyenda>
+    <small>Tablas Preflop Spin Básico - @SensistarX</small>
+  </div>
+</div>
+<div dcm-sidebar>
+  <dcm-logospinproject></dcm-logospinproject>
+</div>

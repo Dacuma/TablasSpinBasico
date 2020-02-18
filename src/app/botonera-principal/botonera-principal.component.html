@@ -1,0 +1,10 @@
+<table dcm-botoneraPrin>
+    <tr>
+      <th><button [ngClass]="{'active':botonActivo === boton.BU}" (click)="botonPulsado(boton.BU)">1. BU</button></th>
+      <th><button [ngClass]="{'active':botonActivo === boton.SBvsBB}" (click)="botonPulsado(boton.SBvsBB)">2. SB v BB</button></th>
+      <th><button [ngClass]="{'active':botonActivo === boton.SBvsBU}" (click)="botonPulsado(boton.SBvsBU)">3. SB v BU</button></th>
+      <th><button [ngClass]="{'active':botonActivo === boton.BBvsBU}" (click)="botonPulsado(boton.BBvsBU)">4. BB v BU</button></th>
+      <th><button [ngClass]="{'active':botonActivo === boton.BBvsSB}" (click)="botonPulsado(boton.BBvsSB)">5. BB VS SB</button></th>
+      <th><button [ngClass]="{'active':botonActivo === boton.HU}" (click)="botonPulsado(boton.HU)">6. HU</button></th>
+    </tr>
+  </table>

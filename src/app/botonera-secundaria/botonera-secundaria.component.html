@@ -1,0 +1,67 @@
+<div dcm-botoneraSec33 *ngIf="botonActivo === 1 || botonActivo === 2">
+  <div>
+    <button relleno [ngClass]="{'active':botonSecActivo === boton.B0a9}" (click)="botonPulsado(boton.B0a9)">0-9 BB</button>
+    <button relleno [ngClass]="{'active':botonSecActivo === boton.B9a15}" (click)="botonPulsado(boton.B9a15)">9-15 BB</button>
+    <button relleno [ngClass]="{'active':botonSecActivo === boton.B15}" (click)="botonPulsado(boton.B15)">>15 BB</button>
+  </div>
+</div>
+
+<div dcm-botoneraSec33 *ngIf="botonActivo === 3 || botonActivo === 4">
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Limp}" (click)="botonPulsado(boton.B0a9Limp)">0-9 BB LIMP</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Raise}" (click)="botonPulsado(boton.B0a9Raise)">0-9 BB RAISE</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9AI}" (click)="botonPulsado(boton.B0a9AI)">0-9 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Limp}" (click)="botonPulsado(boton.B9a15Limp)">9-15 BB LIMP</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Raise}" (click)="botonPulsado(boton.B9a15Raise)">9-15 BB RAISE</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15AI}" (click)="botonPulsado(boton.B9a15AI)">9-15 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Limp}" (click)="botonPulsado(boton.B15Limp)">> 15 BB LIMP</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Raise}" (click)="botonPulsado(boton.B15Raise)">> 15 BB RAISE</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15AI}" (click)="botonPulsado(boton.B15AI)">> 15 BB ALLIN</button>
+  </div>
+</div>
+
+<div dcm-botoneraSec25 *ngIf="botonActivo === 5 ">
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Limp}" (click)="botonPulsado(boton.B0a9Limp)">0-9 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Raise}" (click)="botonPulsado(boton.B0a9Raise)">0-9 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Rol}" (click)="botonPulsado(boton.B0a9Rol)">0-9 BB ROL </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9AI}" (click)="botonPulsado(boton.B0a9AI)">0-9 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Limp}" (click)="botonPulsado(boton.B9a15Limp)">9-15 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Raise}" (click)="botonPulsado(boton.B9a15Raise)">9-15 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Rol}" (click)="botonPulsado(boton.B9a15Rol)">9-15 BB ROL </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15AI}" (click)="botonPulsado(boton.B9a15AI)">9-15 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Limp}" (click)="botonPulsado(boton.B15Limp)">> 15 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Raise}" (click)="botonPulsado(boton.B15Raise)">> 15 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Rol}" (click)="botonPulsado(boton.B15Rol)">> 15 BB ROL </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15AI}" (click)="botonPulsado(boton.B15AI)">> 15 BB ALLIN</button>
+  </div>
+</div>
+
+<div dcm-botoneraSec25 *ngIf="botonActivo === 6 ">
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.SB0a9BB}" (click)="botonPulsado(boton.SB0a9BB)">SB 0-9 BB</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Limp}" (click)="botonPulsado(boton.B0a9Limp)">0-9 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9Raise}" (click)="botonPulsado(boton.B0a9Raise)">0-9 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B0a9AI}" (click)="botonPulsado(boton.B0a9AI)">0-9 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.SB9a15BB}" (click)="botonPulsado(boton.SB9a15BB)">SB 9-15 BB</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Limp}" (click)="botonPulsado(boton.B9a15Limp)">9-15 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15Raise}" (click)="botonPulsado(boton.B9a15Raise)">9-15 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B9a15AI}" (click)="botonPulsado(boton.B9a15AI)">9-15 BB ALLIN</button>
+  </div>
+  <div>
+    <button [ngClass]="{'active':botonSecActivo === boton.SB15BB}" (click)="botonPulsado(boton.SB15BB)">SB > 15 BB</button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Limp}" (click)="botonPulsado(boton.B15Limp)">> 15 BB LIMP </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15Raise}" (click)="botonPulsado(boton.B15Raise)">> 15 BB RAISE </button>
+    <button [ngClass]="{'active':botonSecActivo === boton.B15AI}" (click)="botonPulsado(boton.B15AI)">> 15 BB ALLIN</button>
+  </div>
+</div>
